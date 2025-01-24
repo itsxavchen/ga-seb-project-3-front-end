@@ -1,0 +1,69 @@
+.post-form-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-four-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 64px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.title-artist-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.select-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.select-wrapper {
+  width: 282px;
+  padding: 16px;
+  font-size: 18px; /* Match the text size of input fields */
+  border: none; /* Remove default borders */
+  border-bottom: 2px solid black; /* Add the bottom border */
+  outline: none; /* Remove the outline on focus */
+  background-color: transparent; /* Ensure the background matches the form */
+  color: #262627; /* Adjust the text color */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.description-textarea {
+  width: 100%; /* Stretch the width to fill the available space */
+  height: 300px; /* Fixed height */
+  padding: 16px; /* Add padding for better spacing */
+  border: 2px solid black; /* Add a border around the textarea */
+  resize: none; /* Prevent users from resizing the textarea */
+  overflow-y: auto; /* Add a scroll bar for overflowing vertical content */
+  font-size: 18px; /* Match font size with other inputs */
+  outline: none; /* Remove the default focus outline */
+  box-sizing: border-box; /* Ensure padding and borders are included in the width and height */
+}
+
+.submit-btn {
+  width: 100%;
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 18px;
+  background-color: #262627;
+  color: #fcfcfc;
+}
+
+.submit-btn:focus,
+.submit-btn:focus-visible {
+  color: #fcfcfc;
+  background-color: #0033D8;
+} 

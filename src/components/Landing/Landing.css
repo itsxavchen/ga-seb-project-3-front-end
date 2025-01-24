@@ -1,0 +1,83 @@
+.home-page-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  color: #262627;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(4px);
+}
+
+.modal-content {
+  background: #FCFCFC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 800px;
+  width: 800px;
+  max-width: 90%;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-wrapper {
+  display: flex;
+  width: 1680px;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  z-index: 900;
+}
+
+.signup-signin-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+h3 {
+  font-weight: 600;
+  color: #262627;
+}
+
+.cta-button {
+  border: none;
+  outline: none;
+  font-family: inherit;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.cta-button h3 {
+  color: #262627; /* Default text color */
+  transition: color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect on the button */
+.cta-button:hover h3 {
+  color: blue; /* Change the color of the text inside h3 when hovering */
+}

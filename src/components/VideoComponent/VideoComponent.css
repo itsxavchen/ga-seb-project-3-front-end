@@ -1,0 +1,9 @@
+video-wrapper {
+  margin: 0;
+  padding: 0;/* Full viewport width */
+  height: 100vh; /* Full viewport height */
+}
+video { 
+  height: 100%; /* Full viewport height */
+  object-fit: cover; /* Ensures the video fills the space without distortion */
+}

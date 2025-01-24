@@ -1,0 +1,50 @@
+.nav-bar-container {
+  display: flex;
+  justify-content: center;
+  margin: 32px 5vw 0px 5vw;
+}
+
+
+.nav-bar-wrapper{
+  display: flex;
+  width: 100vw;
+  height: 5vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  list-style-type: none;
+
+}
+
+ul.nav-bar-btn-wrapper li a {
+  text-decoration: none;
+  color: #262627; /* Set your default color */
+  transition: color 0.3s ease; /* Optional: Add a smooth transition */
+}
+
+.nav-bar-btn-wrapper li a:hover {
+  color: blue; /* Change this to your desired hover color */
+}
+
+.plus-btn {
+  position: fixed; /* Position relative to the viewport */
+  bottom: 20px; /* Distance from the bottom of the viewport */
+  left: 50%;    /* Center horizontally */
+  transform: translateX(-50%);
+  z-index: 10;  /* Ensure it's above other content */
+}
+
+.plus-btn a {
+  text-decoration: none;
+  color: black;
+  font-size: 2rem;
+}
+
+.plus-btn a:hover {
+  color: blue; /* Hover effect */
+}

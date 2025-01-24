@@ -1,0 +1,60 @@
+.image-grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping to the next row */
+  justify-content: center; /* Center the grid horizontally */
+  gap: 128px; /* Set a gap between items */
+  padding: 5vh 5vw; /* Add padding instead of margin for consistent spacing */
+}
+
+.filters-wrapper {
+  margin-left: 5vw;
+  display: flex;
+  gap: 64px;
+  margin-top: 5vh;
+}
+
+.filters-wrapper button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: 600;
+
+}
+
+.active-button {
+  color: #0033D8; /* Change text color to white */
+  border: 2px solid #0033D8; /* Optional: Add a border */
+}
+
+
+.image-item {
+  box-sizing: border-box; /* Include padding and border in size calculation */
+  display: flex;
+  flex-direction: column; /* Arrange children vertically */
+  align-items: center; /* Center-align the children */
+  text-align: center; /* Center text inside the item */
+}
+
+.post-image {
+  width: 400px; /* Fixed width for square items */
+  height: 400px; /* Fixed height for square items */
+  object-fit: cover; /* Ensure images cover the container while maintaining aspect ratio */
+  display: block; /* Remove inline-block spacing */
+}
+
+.image-item a {
+  text-decoration: none; /* Remove underline for links */
+}
+
+.image-item h2 {
+  margin-top: 8px; /* Add spacing below the image */
+  font-size: 18px; /* Adjust font size */
+  color: #000; /* Set text color to black */
+}
+
+p {
+  font-size: 18px;
+}

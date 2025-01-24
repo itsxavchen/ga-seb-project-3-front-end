@@ -1,0 +1,69 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:16px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 64px;
+}
+
+label {
+  display: none;
+}
+
+
+h2 {
+  margin: 0;
+}
+
+.error-message {
+  display: block; 
+  margin: 0px;/* Initially hide the element */
+  font-size: 18px;
+  color: #FA1616;
+}
+
+input {
+  width: 250px;
+  padding: 16px;
+  border: none; /* Remove default border */
+  border-bottom: 2px solid #262627; /* Black bottom border */
+  font-size: 18px; /* Input font size */
+  background-color: transparent;
+}
+
+input:focus {
+  color: #262627;
+  outline: none; /* Remove default focus outline */
+  border-bottom-color: #262627; /* Keep bottom border black on focus */
+}
+
+input::placeholder {
+  color: #A9A9A9; /* Placeholder text color */
+  font-size: 18px; /* Placeholder font size */
+  padding-left: 0; /* Align placeholder text correctly */
+  margin: 0; /* Margins are not applied directly to placeholders */
+}
+
+.form-btn {
+  display: flex;
+  width: 282px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 18px;
+  background-color: #262627;
+  color: #fcfcfc;
+}
+
+.form-btn:focus,
+.form-btn:focus-visible {
+  color: #fcfcfc;
+  background-color: #0033D8;
+} 

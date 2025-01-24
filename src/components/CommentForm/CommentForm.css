@@ -1,0 +1,19 @@
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.comment-textarea {
+  width: 100%; /* Stretch the width to fill the available space */
+  height: 120px; /* Fixed height */
+  padding: 16px; /* Add padding for better spacing */
+  border: 2px solid black; /* Add a border around the textarea */
+  resize: none; /* Prevent users from resizing the textarea */
+  overflow-y: auto; /* Add a scroll bar for overflowing vertical content */
+  font-size: 18px; /* Match font size with other inputs */
+  outline: none; /* Remove the default focus outline */
+  box-sizing: border-box; /* Ensure padding and borders are included in the width and height */
+}
